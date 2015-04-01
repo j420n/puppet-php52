@@ -1,4 +1,7 @@
 define php52::php_package {
+
+    include apache::mod::php
+
     file {"/tmp/${name}-5.2.17-2.x86_64.rpm":
         source => "puppet:///modules/php52/${name}-5.2.17-2.x86_64.rpm"
     }
